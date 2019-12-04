@@ -40,12 +40,6 @@ def cleaning(df):
         df=df.fillna(method='bfill', inplace=True)
     return df
 
-################ Dropping unrelated features
-def rmv_usls(df, col):
-    '''droping features that are not related'''
-    df=df.drop(col, axis=1)
-    return df
-
 ################ Correlation pre analysis and heatmap
 def cor(df):
     '''Correlation of features analysis'''
