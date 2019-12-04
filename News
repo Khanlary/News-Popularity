@@ -40,13 +40,6 @@ def cleaning(df):
         df=df.fillna(method='bfill', inplace=True)
     return df
 
-################ Correlation pre analysis and heatmap
-def cor(df):
-    '''Correlation of features analysis'''
-    cor = df.corr(method='pearson')
-    sns.heatmap(cor,annot=True)
-    return(cor)
-
 ################ Target Feature seperation
 def trg(df, midx):
     '''target identification'''
